@@ -10,7 +10,7 @@ def make_api_call(messages, max_tokens, is_final_answer=False, custom_client=Non
 
     if custom_client != None:
         client = custom_client
-    
+
     for attempt in range(3):
         try:
             if is_final_answer:
